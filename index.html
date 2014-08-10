@@ -10,53 +10,145 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <style type="text/css">
+    body, html {
+      margin: 0;
+    }
     .container {
-      width: 100%;
+      width: 95%;
+      padding: 2.5%;
       max-width: 1000px;
       margin: auto;
       font-family: Helvetica, san-serif;
       line-height: 1.5;
       text-align: center;
       color: White;
+      overflow: hidden;
     }
     .container h1 {
       letter-spacing: 1px;
       font-size: 60px;
+      margin-bottom: 80px;
+    }
+    .container h1 span{
+      display: block;
+      margin-top: 10px;
+      font-size: 18px;
+    }
+    .container h2 {
+      letter-spacing: 1px;
+      margin: 0;
+      margin-bottom: 15px;
     }
     .button {
+      display: inline-block;
       text-decoration: none;
-      padding: 20px 30px;
+      padding: 20px 24px;
       font-size: 20px;
-      color: White;
+      color: Orange;
       font-weight: 600;
-      border: 2px solid White;
+      border: 2px solid Orange;
       text-transform: uppercase;
     }
     section {
-      margin-top: 1em;
+      clear: both;
+      background: White;
+      color: Black;
+      padding: 15px;
+      margin-top: 40px;
+    }
+    footer {
+      background: White;
+      color: Black;
+      padding: 15px;
+      display: inline-block;
+      margin-top: 2em;
+    }
+    footer .button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 30px;
+    }
+    .facts {
+      text-align: left;
+      display: inline-block;
+      padding: 0 15px;
+      overflow: hidden;
+      margin: auto;
+      background: White;
+      color: Black;
+    }
+    .fact {
+      margin: 15px 0;
+    }
+
+    @media (max-width: 460px) {
+      .container {
+        line-height: 1.2;
+      }
+      .container h1 {
+        line-height: 1.5;
+        margin-top: 60px;
+        font-size: 23px;
+      }
+      .button {
+        padding: 10px 14px;
+        margin: 30px 0 10px 0;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <p>It took me 2 years of bad paid part time work to change careers,<br>I'll teach you how to do it in one without quitting your job:</p>
     <h1>
-      Learn to code &amp;
+      Learn to code the web &amp;
       <br>
       Start your career in tech.
-      <br>
-      <a href="https://docs.google.com/spreadsheet/viewform?formkey=dEFqZ3F0VERyV2wyc0xxLUkyVmd0d2c6MA" target="_blank" class="button">Apply now</a>
+      <a href="https://docs.google.com/spreadsheet/viewform?formkey=dEFqZ3F0VERyV2wyc0xxLUkyVmd0d2c6MA" target="_blank" class="button">Apply for the course</a>
+      <span>Starts 1. September 2014!</span>
     </h1>
-    
+
+    <div class="facts">
+      <div class="fact">
+        <strong>How?</strong> 
+        <br>
+        Learn by building 12 real-life projects,<br>broken down into weekly tasks &amp; lessons.
+      </div>
+      <div class="fact">
+        <strong>When?</strong>
+        <br>
+        Starts September 2014, for 12 months.
+      </div>
+      <div class="fact">
+        <strong>Price?</strong>
+        <br>
+        $30 per month - cancel any time.
+      </div>
+    </div>
 
     <section>
-      <h2>Who Is This Course For?</h2>
+      <h2>Who is this course for?</h2>
+      This will be the Pioneers intake, I am looking for the first 100 people who are really want to join me on helping you to change your career. The course will start this September, apply now to reserve your seat!
+
     </section>
     <section>
-      <h2>What Will You Learn?</h2>
+      <h2>What will you learn?</h2>
+      Once a week you will get a task from me. Every week we will learn a new concept and apply it to a concrete real life project.
+      Every month we start a new project. By the end of the year you will have a portfolio of 12 projects and a github account full of open source code to apply for your first job in tech.
     </section>
     <section>
-      <h2>About Your Mentor</h2>
+      <h2>About me</h2>
+      In the past two years I changed my career and went from Architecture into the Tech Industry by teaching myself how to code and got a job in Tech startup.
     </section>
+    
+    <footer>
+      <h2>
+        Secure your seat today:
+        <br>
+        <a href="https://docs.google.com/spreadsheet/viewform?formkey=dEFqZ3F0VERyV2wyc0xxLUkyVmd0d2c6MA" target="_blank" class="button">Apply now</a>
+      </h2>
+      Starts 1. September 2014
+    </footer>
   </div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
