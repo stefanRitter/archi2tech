@@ -1,0 +1,27 @@
+{
+  "name": "archi2tech",
+  "version": "0.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stefanRitter/archi2tech.git"
+  },
+  "author": "stefanRitter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stefanRitter/archi2tech/issues"
+  },
+  "homepage": "http://archi2tech.com",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-jade": "^0.12.0",
+    "grunt-contrib-stylus": "^0.18.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^0.6.0"
+  }
+}
