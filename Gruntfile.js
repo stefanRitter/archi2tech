@@ -79,6 +79,6 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask('default', ['watch']);
   grunt.registerTask('build', ['stylus', 'jade', 'concat']);
+  grunt.registerTask('default', ['build', 'watch']);
 };
