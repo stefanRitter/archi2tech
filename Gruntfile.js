@@ -61,7 +61,7 @@ module.exports = function (grunt) {
     watch: {
       styles: {
         files: ['src/**/*.styl'],
-        tasks: ['stylus']
+        tasks: ['stylus', 'jade']
       },
       html: {
         files: ['src/**/*.jade'],
@@ -77,7 +77,8 @@ module.exports = function (grunt) {
 
     'gh-pages': {
       options: {
-        base: 'dist'
+        base: 'dist',
+        clone: 'bower_components/.tmp/'
       },
       src: ['**']
     }
