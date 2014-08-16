@@ -8,4 +8,4 @@
 
 ## Publish
 
-    grunt gh-pages
+    grunt publish
