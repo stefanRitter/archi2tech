@@ -84,5 +84,6 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('build', ['copy', 'stylus', 'jade', 'concat']);
+  grunt.registerTask('publish', ['build', 'gh-pages']);
   grunt.registerTask('default', ['build', 'watch']);
 };
