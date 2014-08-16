@@ -50,6 +50,14 @@ module.exports = function (grunt) {
       }
     },
 
+    copy: {
+      main: {
+        files: [
+          {expand: true, flatten: true, src: ['src/CNAME', 'src/*.jpg'], dest: 'dist/', filter: 'isFile'}
+        ]
+      }
+    },
+
     watch: {
       styles: {
         files: ['src/**/*.styl'],
@@ -69,17 +77,14 @@ module.exports = function (grunt) {
 
     'gh-pages': {
       options: {
-        base: '.',
         clone: 'bower_components/temp-clone'
       },
       src: [
-        'dist/**/*',
-        'src/background.jpg',
-        'CNAME'
+        'dist/**/*'
       ]
     }
   });
 
-  grunt.registerTask('build', ['stylus', 'jade', 'concat']);
+  grunt.registerTask('build', ['copy', 'stylus', 'jade', 'concat']);
   grunt.registerTask('default', ['build', 'watch']);
 };
