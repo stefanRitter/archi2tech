@@ -65,6 +65,17 @@ module.exports = function (grunt) {
         ],
         tasks: ['concat']
       }
+    },
+
+    'gh-pages': {
+      options: {
+        clone: 'bower_components/temp-clone'
+      },
+      src: [
+        'dist/**/*',
+        'src/background.jpg',
+        'CNAME'
+      ]
     }
   });
 
