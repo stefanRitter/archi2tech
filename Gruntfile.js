@@ -77,11 +77,9 @@ module.exports = function (grunt) {
 
     'gh-pages': {
       options: {
-        clone: 'bower_components/temp-clone'
+        base: 'dist'
       },
-      src: [
-        'dist/**/*'
-      ]
+      src: ['**']
     }
   });
 
