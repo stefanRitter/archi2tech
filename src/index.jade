@@ -21,7 +21,7 @@ html(lang="en", itemtype="http://schema.org/WebPage" itemscope)
       h1
         | Learn to code the web &amp;
         br
-        | Start your career in tech.
+        | start your career in tech.
         br
         a(href="/apply.html" class="button") Apply for the course
         .deadline
@@ -44,11 +44,16 @@ html(lang="en", itemtype="http://schema.org/WebPage" itemscope)
           strong Price?
           br
           $30 per month - cancel any time.
+
       hr
-      section.content
-        h2 Why 12 months?
+
+      section.content#why
+        h2
+          a(href="#why")
+            | Why 12 months? 
+            span.pull-right &searr;
         .text
-          | I know a year sounds long, this course is for 
+          | I know a year sounds long, that's why this course is for 
           em serious career changers 
           | who want to learn while staying in their current occupation! Google's Peter Norvig argues  
           a(href="http://norvig.com/21-days.html" target="_blank") it takes 10 years to become a great programmer.
@@ -68,9 +73,11 @@ html(lang="en", itemtype="http://schema.org/WebPage" itemscope)
             span.daysleft
             |, apply now to reserve your seat!
 
-      hr
-      section.content
-        h2 Who is this course for?
+      section.content#who
+        h2
+          a(href="#who")
+            | Is this course for you?
+            span.pull-right &searr;
         .text
           | Do you want to join the new economy but can't just quit your current job? 
           | Then this is the course for you! I will teach you how to master HTML, CSS, JavaScript, and more. 
@@ -86,11 +93,13 @@ html(lang="en", itemtype="http://schema.org/WebPage" itemscope)
             span.daysleft
             |, apply now to reserve your seat!
       
-      hr
-      section.content
-        h2 What will you learn?
+      section.content#what
+        h2
+          a(href="#what")
+            | What will you learn?
+            span.pull-right &searr;
         .text
-          strong My goal is to teach you all you need to get a job in tech. 
+          strong I will teach you all you need to get a job in tech. 
           | We will start with creating websites, after that we will be building 
           a(href="http://en.wikipedia.org/wiki/Single-page_application" target="_blank") Single-page applications
           | , and finish the course with server and database programming in 
@@ -113,10 +122,12 @@ html(lang="en", itemtype="http://schema.org/WebPage" itemscope)
             span.daysleft
             |, apply now to reserve your seat!
 
-      hr
-      section.content
-        h2 About me
-        .text
+      section.content#instructor
+        h2 
+          a(href="#instructor")
+            | About me
+            span.pull-right &searr;
+        .columns
           .avatar
             img(src="stefan.jpg" alt="Stefan Ritter")
             br

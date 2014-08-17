@@ -28,6 +28,9 @@ hr
   border-top 1px dashed LightGray
   height 0
 
+.pull-right
+  float right
+
 .avatar
   margin-bottom 20px
   text-align center
@@ -73,11 +76,15 @@ hr
       font-size 18px
 
   h2
+    cursor pointer
     letter-spacing 1px
     margin 0
     margin-bottom 15px
     font-size 24px
     font-weight 400
+    border-bottom 1px dashed LightGray
+    a
+      text-decoration none
 
 .button
   display inline-block
@@ -97,7 +104,7 @@ section
   text-align left
   line-height 1.8
 
-.text
+.columns
   -webkit-columns: 2 320px
   -moz-columns: 2 320px
   -ms-columns: 2 320px
@@ -115,10 +122,10 @@ footer
     padding 10px 30px
 
 .content
+  height 30px
   overflow hidden
   background WhiteSmoke
-  border 2px solid Gray
-  padding 30px
+  padding 20px
 
 .facts
   margin-top 20px
@@ -134,6 +141,8 @@ footer
 .daysleft
   font-weight bold
 
+.pointer
+  font: "Georgia", "Apple Symbols", serif
 
 @media (max-width 460px)
   .grid-1-2
@@ -151,6 +160,9 @@ footer
       line-height 1.5
       margin-top 40px
       font-size 23px
+
+    h2
+      font-size 20px
   
   .button
     padding 10px 14px
