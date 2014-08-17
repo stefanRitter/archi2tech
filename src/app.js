@@ -8,8 +8,8 @@
 
   $('.daysleft').text(daysLeft + ' days');
 
-  $(document).on('click touch', '.content', function (e) {
-    var section = $(e.currentTarget),
+  $(document).on('click touch', '.content h2', function (e) {
+    var section = $(e.currentTarget).parent(),
         defaultHeight = '30px';
 
     console.log(section.css('height'));
