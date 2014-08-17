@@ -6,4 +6,8 @@
       daysLeft = Math.ceil(timeLeft/(24 * 60 * 60 * 1000));
 
   $('.daysleft').text(daysLeft + ' days');
+
+  $(document).on('click touch', '.more', function (e) {
+    $(e.currentTarget).css('height', 'auto');
+  });
 }());
