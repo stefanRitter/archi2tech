@@ -10,14 +10,14 @@
 
   $(document).on('click touch', '.content h2', function (e) {
     var section = $(e.currentTarget).parent(),
-        defaultHeight = '30px';
+        id = section.attr('id');
 
-    console.log(section.css('height'));
-    if (section.css('height') === defaultHeight) {
-      $('.content').css({height: defaultHeight});
-      section.css({height: 'auto'});
+    if (section.hasClass('open')) {
+      section.removeClass('open');
     } else {
-      section.css({height: defaultHeight});
+      $('.content').removeClass('open');
+      section.addClass('open');
+      ga('send', 'event', 'section', id);
     }
   });
 }());
