@@ -9,11 +9,12 @@
   $('.daysleft').text(daysLeft + ' days');
 
   $(document).on('click touch', '.content h2', function (e) {
-    var section = $(e.currentTarget).parent(),
+    var section = $(e.currentTarget).parent().parent(),
         id = section.attr('id');
 
     if (section.hasClass('open')) {
       section.removeClass('open');
+      e.preventDefault();
     } else {
       $('.content').removeClass('open');
       section.addClass('open');
