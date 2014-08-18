@@ -1,6 +1,6 @@
 (function () {
   'use strict';
-  $('body').backstretch("/background.jpg", {fade: 2000});
+  $('body').backstretch('/background.jpg', {fade: 2000});
   
   var startDate = new Date(2014, 8, 1),
       timeLeft = startDate.getTime() - (new Date()).getTime(),
