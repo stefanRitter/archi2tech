@@ -12,6 +12,25 @@ strong
 
 h6
   font-size 28px
+  margin 1.5em 0
+
+h1
+  letter-spacing 1px
+  font-size 60px
+  margin-bottom 60px
+
+  .deadline
+    display block
+    margin-top 10px
+    font-size 18px
+
+h2
+  cursor pointer
+  letter-spacing 1px
+  margin 0
+  margin-bottom 15px
+  font-size 24px
+  font-weight 400
 
 em
   color Orange
@@ -27,6 +46,28 @@ hr
   border none
   border-top 1px dashed LightGray
   height 0
+
+footer
+  color White
+  padding 15px
+  display inline-block
+  margin-top 2em
+
+  .button
+    display inline-block
+    margin-top 10px
+    padding 10px 30px
+
+.icon-check,
+.icon-heart
+  font-size 40px
+  line-height 0
+  margin-top 20px
+  display inline-block
+  color #70ba4d
+
+.icon-heart
+  color Orange
 
 .pull-right
   float right
@@ -64,24 +105,6 @@ hr
   color WhiteSmoke
   overflow hidden
 
-h1
-  letter-spacing 1px
-  font-size 60px
-  margin-bottom 80px
-
-  .deadline
-    display block
-    margin-top 10px
-    font-size 18px
-
-h2
-  cursor pointer
-  letter-spacing 1px
-  margin 0
-  margin-bottom 15px
-  font-size 24px
-  font-weight 400
-
 .button
   display inline-block
   text-decoration none
@@ -99,25 +122,15 @@ section
   padding 15px
   text-align left
   line-height 1.8
-  a:first-of-type
-    text-decoration none
+
+.content-link
+  text-decoration none
     
 .columns
   -webkit-columns: 2 320px
   -moz-columns: 2 320px
   -ms-columns: 2 320px
   columns: 2 320px
-
-footer
-  color White
-  padding 15px
-  display inline-block
-  margin-top 2em
-
-  .button
-    display inline-block
-    margin-top 10px
-    padding 10px 30px
 
 .content
   height 30px
@@ -129,16 +142,19 @@ footer
   &.open
     height auto
 
-.facts
-  margin-top 20px
-
 .fact
   display inline-block
-  color White
-  text-align left
-  margin 15px
-  width 230px
-  vertical-align top
+  text-align center
+  vertical-align bottom
+  margin 1em
+  padding 1em
+  width 200px
+  height 130px
+  background WhiteSmoke
+  background rgba(255,255,255,0.9)
+  color Black
+  border-radius 4px
+  box-shadow -3px 3px 11px 0px rgba(50, 50, 50, 0.2)
 
 .daysleft
   font-weight bold

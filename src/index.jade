@@ -9,61 +9,45 @@ html(lang="en", itemtype="http://schema.org/WebPage" itemscope)
     .container
       h6 If I could do it, so can you:
       h1
-        //| Learn to Code the Web &amp;
-        //br
+        | Learn Web Development &amp;
+        br
         | Start your Career in Tech.
         br
         a(href="/apply" class="button") Apply for the course
         .deadline
-          | Starts 1. September 2014
+          | a 12 months program
           br
-          | Only 
-          span.daysleft
-          |  left to join!
+          | for serious career changers.
 
       .facts
         .fact
-          strong How? 
+          .icon-check &#10004; 
           br
-          | Learn by building 12 real-life projects. Broken down into weekly challenges.
+          | Learn by building 12 real-life functional 
+          strong websites and apps
+        
         .fact
-          strong When?
+          .icon-check &#10004; 
           br
-          | Starts September 2014, runs for 12 months. Each month is one separate unit.
+          | Stay in your current job: work in your own pace 
+          strong 3-6 hours / week
+        
         .fact
-          strong Price?
+          .icon-check &#10004; 
           br
-          $30/month - cancel any time.
+          | Get help with job applications and 
+          strong prepare interviews
 
+        .fact
+          .icon-heart &hearts;
+          br
+          $30 / month
+          br
+          | cancel any time 
+          strong personal instructor
       hr
-      section.content#why
-        a(href="#why")
-          h2
-            | Why 12 months? 
-            span.pull-right &searr;
-        .text
-          | I know a year sounds long, that's why this course is for 
-          em serious career changers 
-          | who want to learn while staying in their current occupation! Google's Peter Norvig argues  
-          a(href="http://norvig.com/21-days.html" target="_blank") it takes 10 years to become a great programmer.
-          |  So what can you learn in a year? Enough to make the switch! It took me two years to learn what I will condense and package for you into a focused, efficient one year curriculum. 
-          | In the end of this course you will able to confidently produce any application you want for the web. 
-          | You will know how to navigate and evaluate the current technologies and frameworks, and know to choose the right one for the job.
-          br
-          | Hacking has allot to do with passion for finding new solutions to problems. My goal is to spark in you a curiosity and appreciation for clean, elegant, 
-          | and efficient code. The course will give you the right tools to go out, discover, and learn new technologies as they appear.
-          br
-          | Should you decide you have had enough input from my side you can cancel the course any time. 
-          | Each month will be a concise topic unit so you can decide each month if you still want to continue along.
-          br
-          br
-          a(href="/apply")
-            | The course will start in only 
-            span.daysleft
-            |, apply now to reserve your seat!
-
       section.content#who
-        a(href="#who")
+        a.content-link(href="#who")
           h2
             | Is this course for you?
             span.pull-right &searr;
@@ -78,12 +62,12 @@ html(lang="en", itemtype="http://schema.org/WebPage" itemscope)
           br
           br
           a(href="/apply")
-            | The course will start in only 
-            span.daysleft
+            | The course will start on 
+            strong 1. September 2014
             |, apply now to reserve your seat!
       
       section.content#what
-        a(href="#what")
+        a.content-link(href="#what")
           h2
             | What will you learn?
             span.pull-right &searr;
@@ -107,12 +91,38 @@ html(lang="en", itemtype="http://schema.org/WebPage" itemscope)
           br
           br
           a(href="/apply")
+            | The course will start in on 
+            strong 1. September 2014
+            |, apply now to reserve your seat!
+      
+      section.content#why
+        a.content-link(href="#why")
+          h2
+            | Why 12 months? 
+            span.pull-right &searr;
+        .text
+          | I know a year sounds long, that's why this course is for 
+          em serious career changers 
+          | who want to learn while staying in their current occupation! Google's Peter Norvig argues  
+          a(href="http://norvig.com/21-days.html" target="_blank") it takes 10 years to become a great programmer.
+          |  So what can you learn in a year? Enough to make the switch! It took me two years to learn what I will condense and package for you into a focused, efficient one year curriculum. 
+          | In the end of this course you will able to confidently produce any application you want for the web. 
+          | You will know how to navigate and evaluate the current technologies and frameworks, and know to choose the right one for the job.
+          br
+          | Hacking has allot to do with passion for finding new solutions to problems. My goal is to spark in you a curiosity and appreciation for clean, elegant, 
+          | and efficient code. The course will give you the right tools to go out, discover, and learn new technologies as they appear.
+          br
+          | Should you decide you have had enough input from my side you can cancel the course any time. 
+          | Each month will be a concise topic unit so you can decide each month if you still want to continue along.
+          br
+          br
+          a(href="/apply")
             | The course will start in only 
-            span.daysleft
+            strong 1. September 2014
             |, apply now to reserve your seat!
 
       section.content#instructor
-        a(href="#instructor")
+        a.content-link(href="#instructor")
           h2 
             | About me
             span.pull-right &searr;
@@ -143,7 +153,7 @@ html(lang="en", itemtype="http://schema.org/WebPage" itemscope)
           br
           a(href="/apply" class="button") Apply now
         | Starts 1. September 2014 - only 
-        span.daysleft
+        span.daysleft 20 days
         |  left!
     
     include shared/_ga.jade
